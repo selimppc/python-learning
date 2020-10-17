@@ -23,3 +23,6 @@ other = Point(1, 2)
 # this will return False as both address of memories are different.
 # after adding comparison magic method it will return True
 print(point == other)
+
+
+# Reference : https://rszalski.github.io/magicmethods/#comparisons
