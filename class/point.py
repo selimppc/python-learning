@@ -12,7 +12,14 @@ class Point:
         self.x = x
         self.y = y
 
+    # class method. First parameter must be cls
+    # need @classmethod as decorator
+    @classmethod
+    zero(cls):
+        return cls(0, 0)
+
     # define a function
+
     def draw(self):
         print(f"Point ({self.x}, {self.y})")
 
@@ -23,6 +30,9 @@ point.draw()
 
 # class atrributes are shared of instances of class
 print(Point.default_color)
+
+# factory method : it creates new object
+point = Point.zero()
 
 # call the class like a function
 point = Point(1, 2)
